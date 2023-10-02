@@ -1,0 +1,28 @@
+<p>dashboard works!</p>
+<!-- dashboard.component.html -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Home</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <span class="navbar-text mr-3">
+                  <i class="fas fa-user mr-1"></i> Welcome, {{ userName }}
+                </span> 
+                <hr/>
+                <button class="btn btn-danger" (click)="logout()">Logout</button>
+              </li>
+                <!-- <li class="nav-item" *ngIf="userName">
+                    <span class="nav-link">Welcome, {{ userName }}</span>
+                </li> -->
+              <!-- <li class="nav-item">
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Rest of your dashboard content goes here -->
+  </div>
