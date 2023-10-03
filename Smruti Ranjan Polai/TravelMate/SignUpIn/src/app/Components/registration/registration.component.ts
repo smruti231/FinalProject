@@ -13,7 +13,7 @@ export class RegistrationComponent {
   [x: string]: any;
   registrationForm: FormGroup;
   submitted = false;
-  emailExists = false; // Initialize emailExists here
+  emailExists = false;
   passwordsMismatch = false;
 
 

@@ -5,7 +5,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Validation.Services // Adjust the namespace as needed
+namespace Validation.Services
     {
     public interface IAuthService
         {

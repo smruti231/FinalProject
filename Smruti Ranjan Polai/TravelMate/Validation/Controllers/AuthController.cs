@@ -15,12 +15,12 @@ namespace Validation.Controllers
     public class AuthController : ControllerBase
         {
         private readonly DataContext _context;
-        private readonly IAuthService _authService; // Inject the authentication service.
+        private readonly IAuthService _authService;
 
         public AuthController(DataContext context, IAuthService authService)
             {
             _context = context;
-            _authService = authService; // Initialize the authentication service.
+            _authService = authService;
             }
 
         [HttpPost("register")]

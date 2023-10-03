@@ -37,9 +37,8 @@ export class LoginComponent {
 
     this.userService.login(user).subscribe({
       next: (data) => {
-        // Assuming the backend returns a JWT token upon successful login
-        localStorage.setItem('token', data.token); // Store the token in localStorage
-        this.router.navigate(['/dashboard']); // Redirect to the dashboard or home page
+        localStorage.setItem('token', data.token);
+        this.router.navigate(['/dashboard']);
       },
       error: (error) => {
         alert('Login failed. Please check your credentials and try again.');
@@ -49,7 +48,7 @@ export class LoginComponent {
   }
 
   navigateToRegistration() {
-    this.router.navigate(['/register']); // Navigate to the registration page
+    this.router.navigate(['/register']);
   }
 
 }
