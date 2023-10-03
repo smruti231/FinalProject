@@ -10,9 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 export class BlogContentComponent {
   
   blogData=[ 
-    {id:1,heading:'Top 10 Best places in Mumbai',date:'01/10/2023',author:'By-Thrupthi G',content:'These are the top 10 tourist places in Mumbai you must visit to get the best sight of the city of dreams in India:Gateway of India,Juhu Beach,Elephanta Caves,Colaba Causeway Market, Marine Drive,Victoria Terminus,Film City,Haji Ali,Banganga Tank,Mahalaxmi,Dhobi Ghat',subcontent:'Gateway of India is the best place to visit when you are in Bombay. This was erected in 1924 by George Willet to mark the arrival of King George V and Queen Mary to Mumbai. The Gateway of India is located close to the Taj Mahal Palace and overlooking the huge Arabian Sea.'},
-    {id:2,heading:'Top 5 Best places to Eat',date:'',author:'',content:''},
-    {id:3,heading:'',date:'',author:'',content:''},
+    {id:1,heading:'Top 10 Best places in Mumbai',username:'By-Thrupthi G',content:'These are the top 10 tourist places in Mumbai you must visit to get the best sight of the city of dreams in India:Gateway of India,Juhu Beach,Elephanta Caves,Colaba Causeway Market, Marine Drive,Victoria Terminus,Film City,Haji Ali,Banganga Tank,Mahalaxmi,Dhobi Ghat',subcontent:'Gateway of India is the best place to visit when you are in Bombay. This was erected in 1924 by George Willet to mark the arrival of King George V and Queen Mary to Mumbai. The Gateway of India is located close to the Taj Mahal Palace and overlooking the huge Arabian Sea.'},
+    {id:2,heading:'Top 5 Best places to Eat',username:'',content:''},
+    {id:3,heading:'',username:'',content:''},
 
 
   ];
