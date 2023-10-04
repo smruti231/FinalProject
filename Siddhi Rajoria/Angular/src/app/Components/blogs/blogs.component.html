@@ -1,0 +1,17 @@
+
+
+    <div class="container"><div class="head">BLOGS </div><div class="right">Write your Blog here! <button class="icon"><i class="fa-solid fa-pen-to-square fa-beat fa-sm" style="color: #85b1ff;"></i></button></div></div>
+    <div class="container-1">
+        <div class="card" *ngFor="let card of cards" [style.background-image]=" 'url('+ card.imageUrl+ ')'">
+            <div class="box">
+                <div class="content">
+                    <h2>{{card.id}}</h2>
+                    <h3>{{card.heading}}</h3>
+                    <p>{{card.content}}</p>
+                    <button (click)="readMore(card.id)">Read In - Detail</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
