@@ -1,5 +1,5 @@
 # FinalProject
-Put Your Codes in the folder named of you
+Team Members : Prabhat Ku. Padhiary, Smruti Ranjan Polai, Siddhi Rajorai, Madiha Simran, Thrupthi G
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 PROJECT SYNOPSIS
