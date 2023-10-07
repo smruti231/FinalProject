@@ -1,0 +1,126 @@
+.title{
+  color: rgb(20, 20, 120);
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+}
+.form-new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px;
+  width: 500px;
+  margin-bottom: 0px;
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+::placeholder{
+  color: black;
+}
+
+
+.err {
+  color: #ff0000;
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+
+.row.justify-content-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    padding: 0;
+  }
+}
+
+.body{
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../Images/bg2.jpg);
+  background-size: cover;
+  height: 600px;
+}
+.main{
+  background-color: rgba(236, 228, 228, 0.61);
+  backdrop-filter: blur(5px);
+}
+.sidebar{
+  margin-bottom: 0px;
+  color: white;
+  background-color: #1d37b9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img{
+  position: absolute;
+  z-index: 100;
+}
+.row{
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    box-shadow: 5px 10px 8px #888888;
+    width: 1200px;
+    height: 500px;
+    background-color: #ffffffd4;
+    border-radius: 20px;
+}
+i.fa-address-card{
+  font-size: 150px;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+i.fa-address-card:hover{
+  color: black;
+}
+.new-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn{
+  margin-top: 30px;
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25); 
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background-color: black;
+  border: 1px solid #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form-group{
+  margin: 10px;
+}

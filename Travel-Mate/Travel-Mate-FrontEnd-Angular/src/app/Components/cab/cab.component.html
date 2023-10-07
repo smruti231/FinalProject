@@ -1,0 +1,32 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Young+Serif&display=swap');
+</style>
+<app-dashboard></app-dashboard>
+<div id="main-body">
+<div class="container">
+    <h1>GRAB A CAB!</h1>
+    <div class="sub-container-1">
+        <div class="form-group">
+            <span>Pick-Up Point:</span>
+            <input id="location" placeholder="Pick-Up Point" type="text" [(ngModel)]="src" class="form-control m-3" />
+        </div>  
+        <div class="form-group">
+            <span>Destination:</span>
+            <input id="destination" placeholder="Destination" input type="text" [(ngModel)]="dest" class="form-control m-3" />
+        </div>
+        <div class="form-group">
+            <span>Calculated Distance(in KM):</span>
+            <input type="number" placeholder="Calculated Distance" class="form-control m-3" disabled [(ngModel)]="distance" style="color: black; font-weight: bold;" />
+        </div>
+        <div class="form-group">
+            <span>Total Fare(in Rupees):</span>
+            <input type="number" placeholder="Calculated Fare" class="form-control m-2" disabled [value]="fare" style="color: black; font-weight: bold;"/>
+        </div>
+    </div>
+    <div class="sub-container-2">
+        <button (click)="onClickBtn()" class="btn">Calculate Distance</button>
+        <button  [disabled]="isDisabledBook" (click)="onClickBook()" class="btn">Book Now</button>
+        <button [disabled]="isDisabled" (click)="onClickCancel()" class="btn">Cancel Cab</button>
+    </div>
+</div>
+</div>

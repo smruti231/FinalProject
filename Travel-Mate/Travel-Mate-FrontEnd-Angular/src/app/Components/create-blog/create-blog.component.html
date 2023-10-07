@@ -1,0 +1,47 @@
+<app-dashboard></app-dashboard>
+<div class="main-container">
+<div class="create-blog-container">
+  <h2>Create a New Blog</h2>
+  <label for="blog-title">Title:</label>
+  <input type="text" id="blog-title" [(ngModel)]="blogTitle" placeholder="Enter Blog Title"/>
+
+  <label for="author-name">UserName:</label>
+  <input
+    type="text"
+    id="author-name"
+    [(ngModel)]="authorName"
+    placeholder="Enter Your Name"
+  />
+  
+  <label>Enter Your Desired Location:</label>
+  <div class="location-dropdown">
+    <select>
+      <option value=1>Bangalore</option>
+      <option value=2>Bhubaneswar</option>
+      <option value=3>Chennai</option>
+      <option value=4>Kolkata</option>
+      <option value=5>Jaipur</option>
+    </select>
+  </div>
+
+  <!-- Blog Content -->
+
+  <label for="blog-content">Content:</label>
+  <textarea
+    id="blog-content"
+    [(ngModel)]="blogContent"
+    placeholder="Write your blog content here..."
+  ></textarea>
+
+  <!-- Submit button -->
+  <div class="button-div">
+    <button class="create-blog-button" (click)="submitBlog()">Submit</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+

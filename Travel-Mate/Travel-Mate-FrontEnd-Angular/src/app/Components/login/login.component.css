@@ -1,0 +1,138 @@
+.body{
+  /* position: absolute; */
+  /* z-index: 0; */
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../Images/bg2.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.main{
+  background-color: rgba(236, 228, 228, 0.61);
+  backdrop-filter: blur(5px);
+}
+.row{
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  box-shadow: 5px 10px 8px #888888;
+  width: 1200px;
+  height: 500px;
+}
+.new-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar{
+  /* border: 2px solid black; */
+  margin-bottom: 0px;
+  color: white;
+  background-color: #0e1e6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for form fields and labels */
+.form-group label {
+  font-weight: bold;
+}
+.sub-heading{
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+  color: black;
+}
+.form-control {
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+  width: 290px;
+  text-align: center;
+  border-radius: 30px;
+}
+::placeholder{
+  color: black;
+}
+.form-control:hover{
+  border:2px solid black;
+  border-radius: 30px;
+}
+
+i.fa, i.fa-regular {
+  margin-right: 5px;
+}
+
+.row.justify-content-center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    padding: 0;
+  }
+}
+
+i.fa-user-circle{
+  font-size: 150px;
+  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+h2{
+  color: rgb(20, 20, 120);
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px;
+  /* text-shadow: 2px 2px 5px rgb(62, 60, 60); */
+}
+
+.forget{
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.forget:hover{
+  transform: scale(1.2);
+}
+
+.form-group{
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  /* margin-left: 60px; */
+  width: 150px;
+  height: 45px;
+  background-color: #9f1717;
+  border: 1px solid rgba(255, 255, 255, 0.25); 
+  border-radius: 5px;
+  color: rgb(243, 241, 241);
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  border: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+}

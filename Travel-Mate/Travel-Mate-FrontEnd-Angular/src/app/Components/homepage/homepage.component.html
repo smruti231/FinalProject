@@ -1,0 +1,28 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Young+Serif&display=swap');
+</style>
+<app-dashboard></app-dashboard>
+<div class="body">
+      <div class="search-bar">
+        <label class="text">Enter Your<br><span id="colored">Desired <span id="colored2">Location</span></span></label>
+      <div class="location-dropdown">
+        <select class="drop-down" [(ngModel)]="selectedLocation" (ngModelChange)="onLocationChange($event)" id="select">
+          <option value=1>Bangalore</option>
+          <option value=2>Bhubaneswar</option>
+          <option value=3>Chennai</option>
+          <option value=4>Kolkata</option>
+          <option value=5>Jaipur</option>
+        </select>
+      </div>
+        <!-- <input type="text" [placeholder]="'Search for hotels, cabs, blogs in ' + selectedLocation" /> -->
+      </div>
+      <br>
+      <div class="btn-div">
+        <button class="next-button" routerLink="/main" [disabled]="isDisabled">
+          Next
+          <!-- <a  >Next</a> -->
+        </button>
+    </div>
+  </div>
+
+ 

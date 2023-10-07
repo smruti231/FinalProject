@@ -1,0 +1,91 @@
+/* Style for the "Next" button */
+.next-button {
+  background-color: rgb(231, 119, 54); 
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  border-radius: 30px;
+  border: none;
+  transition: 0.2s;
+}
+.next-button:disabled{
+  background-color: rgba(193, 190, 190, 0.959);
+  color: black;
+}
+.next-button:disabled:hover{
+  background-color: rgba(193, 190, 190, 0.959);
+  transform: scale(1);
+}
+.next-button:hover{
+  transform: scale(1.2);
+  background-color: wheat;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+.text{
+  font-size: 90px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.text:hover{
+  text-shadow: 5px 5px 10px rgb(63, 62, 62);
+}
+#colored{
+  margin-left: 130px;
+  color: rgb(255, 255, 255);
+}
+.body{
+  background-image: url("../../../assets/images/background.jpg");
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 540px;
+}
+#colored2{
+  color: black;
+}
+.drop-down{
+  height: 30px;
+  width: 300px;
+}
+.location-dropdown {
+  position: relative;
+  font-family: Arial;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+select{
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+option{
+  border: 10px solid black;
+  background-color:rgba(104, 112, 109, 0.196);
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-div{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}

@@ -1,0 +1,90 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Young+Serif&display=swap');
+</style>
+
+<div class="body"></div>
+<div class="row">
+  <div class="col-md-9 main">
+    <h2 class="title">Sign Up</h2>
+    <form class="form-new" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name" style="margin-left: 10px;"> Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name" placeholder="&#xf2b9;   Enter your name">
+        <p
+          *ngIf="registrationForm.get('name')?.invalid && (registrationForm.get('name')?.touched || registrationForm.get('name')?.dirty)">
+          <span class="err" *ngIf="registrationForm.get('name')?.hasError('required')">
+            Name is required
+          </span>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="email" style="margin-left: 10px;"> Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email" placeholder="&#xf0e0;   Enter your email">
+        <div
+          *ngIf="registrationForm.get('email')?.invalid && (registrationForm.get('email')?.touched || registrationForm.get('email')?.dirty)">
+          <span class="err" *ngIf="registrationForm.get('email')?.hasError('required')">
+            Email is required
+          </span>
+          <span class="err" *ngIf="registrationForm.get('email')?.hasError('email')">
+            Invalid email format
+          </span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label style="margin-left: 10px;" for="phoneNo">Phone Number</label>
+        <input type="tel" class="form-control" id="phoneNo" formControlName="phoneNo"
+          placeholder="&#xf095;   Enter phone number">
+        <p
+          *ngIf="registrationForm.get('phoneNo')?.invalid && (registrationForm.get('phoneNo')?.touched || registrationForm.get('phoneNo')?.dirty)">
+          <span class="err" *ngIf="registrationForm.get('phoneNo')?.hasError('required')">
+            Phone Number is required
+          </span>
+          <span class="err" *ngIf="registrationForm.get('phoneNo')?.hasError('pattern')">
+            Invalid phone number format (10 digits)
+          </span>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="password" style="margin-left: 10px;">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password"
+          placeholder="&#xf023;   Enter your password">
+        <p
+          *ngIf="registrationForm.get('password')?.invalid && (registrationForm.get('password')?.touched || registrationForm.get('password')?.dirty)">
+          <span class="err" *ngIf="registrationForm.get('password')?.hasError('required')">
+            Password is required
+          </span>
+          <span class="err" *ngIf="registrationForm.get('password')?.hasError('minlength')">
+            Password must be at least 6 characters long
+          </span>
+        </p>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword" style="margin-left: 10px;">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword"
+          placeholder="&#xf132;   Confirm your password">
+        <div
+          *ngIf="registrationForm.get('confirmPassword')?.invalid && (registrationForm.get('confirmPassword')?.touched || registrationForm.get('confirmPassword')?.dirty)">
+          <span class="err" *ngIf="registrationForm.get('confirmPassword')?.hasError('required')">
+            Confirm Password is required
+          </span>
+          <span class="err" *ngIf="registrationForm.hasError('passwordMismatch')">
+            Password and Confirm Password do not match
+          </span>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+  <div class="col-md-3 sidebar">
+    <div class="new-body">
+      <i class="fa-solid fa-address-card"></i>
+      <p style="text-align: center;">
+        <span style="color: black;font-size: 20px;font-weight: 700;">Join us,</span> in this amazing journey of improving the Tourism Economy of our country by writing blogs about different places, and providing your own opinions on different places all across our country.
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+.main-content {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+  .card-1 {
+    margin: auto;
+    /* border: 2px solid black; */
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    background-image: url(../../../assets/images/hotel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: 10px 10px 5px rgb(126, 128, 128);
+  } 
+  .card-2 {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    background-image: url(../../../assets/images/taxi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: 10px 10px 5px rgb(126, 128, 128);
+  } 
+  .card-3 {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.66);
+    background-image: url(../../../assets/images/bg-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: 10px 10px 5px rgb(126, 128, 128);
+  } 
+  #color-1{
+    color: yellow;
+  }
+  #color-2{
+    color: rgb(255, 0, 0);
+  }
+  #color-3{
+    color: #2b00ff;
+  }
+  
+  #button-n {
+    margin-top: 70px;
+    background-color: #973911;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+  }
+  #button-n:hover{
+    background-color: #dddd15;
+    color: black;
+  }
+  .sub-heading{
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+  .head-container{
+    margin-top: 0px;
+    height: 60px;
+  }
+  .content-1{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .content-2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .content-3{
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .lift-up{
+    background-color: rgba(139, 215, 238, 0.457);
+    width: 100%;
+    height: 450px;
+    transition: 0.5s;
+  }
+  .lift-up:hover{
+    transform: translateY(-50px);
+  }
+
+/* ------------------------------------------------------------------------ */
+  

@@ -1,0 +1,44 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@500&family=Young+Serif&display=swap');
+  </style>
+  <div class="body"></div>
+  <div class="row">
+    <div class="col-md-9 main">
+      <h2>WELCOME BACK!</h2>
+      <p style="text-align: center;">To stay connected with us please login with your personal information.<br>You will be recieving all of our updates through Emails.</p>
+      <hr>
+      <h2 class="sub-heading">Sign In</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="&#xf007;   Email" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="password" formControlName="password"
+            placeholder="&#xf023;   Password">
+        </div>
+        <div class="form-group">
+          <a class="forget" routerLink="/forget-password">Forget Password</a>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn">
+            <i class="fa fa-sign-in"></i>
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3 sidebar">
+    <div class="new-body">
+      <i class="fa fa-user-circle"></i><br>
+      <span style="text-align: center;">Join Us to <b>Explore More</b></span>
+      <hr style="width: 170px; text-align: center;margin-left: 6px;">
+      <p style="text-align: center;">
+        Join the platform where you can find the best places to visit across the Country. You can avail additional features as well.
+      </p>
+      <button type="button" class="btn btn1" (click)="navigateToRegistration()">
+        <i class="fa-regular fa-id-card"></i>
+          Register
+      </button>
+    </div>
+    </div>
+  </div>

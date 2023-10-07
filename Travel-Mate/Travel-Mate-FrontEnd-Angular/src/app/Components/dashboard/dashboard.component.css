@@ -1,0 +1,38 @@
+span{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 23px;
+    transition: 0.2s;
+}
+span:hover{
+    font-weight: 500;
+    cursor: pointer;
+}
+a{
+    font-size: 23px;
+    color: white;
+}
+a:hover{
+    font-weight: 500;
+}
+
+.log-in{
+    margin-left: 730px;
+}
+.log-out{
+    margin-left: 730px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.667);
+    display: flex;
+    height: 60px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 15px;
+}

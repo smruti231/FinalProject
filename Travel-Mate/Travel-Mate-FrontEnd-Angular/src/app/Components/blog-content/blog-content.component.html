@@ -1,0 +1,8 @@
+<app-dashboard></app-dashboard>
+<div class="card" *ngFor="let blog of blogs">
+    <h3>{{blog.blogTitle}}</h3>
+    <p><b>By - {{blog.userName}}</b></p>
+    <p>
+        {{blog.content}}
+    </p>
+</div>
