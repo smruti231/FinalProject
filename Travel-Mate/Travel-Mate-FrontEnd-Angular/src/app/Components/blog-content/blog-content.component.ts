@@ -11,6 +11,7 @@ import { LocationService } from 'src/app/location.service';
   templateUrl: './blog-content.component.html',
   styleUrls: ['./blog-content.component.css']
 })
+  
 export class BlogContentComponent {
   blogs:Blogs[]=[];
 
