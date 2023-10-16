@@ -9,6 +9,7 @@ import { FilterPipe } from 'src/app/Pipes/filter.pipe';
   templateUrl: './blogs.component.html',
   styleUrls: ['./blogs.component.css']
 })
+  
 export class BlogsComponent {
   selectedLocation : number = 0;
   selectedLocName : string = "";
