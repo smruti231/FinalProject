@@ -42,4 +42,4 @@ Individual Roles Assigned for the Project
 2.	Thrupthi G: UI/UX Development, frontend
 3.	Siddhi Rajoria: Backend Development, DB Manager
 4.	Prabhat Kumar Padhiary: Backend Development, DB Manager
-5.	Smruti Ranjan Polai: Backend Development, Frontend
+5.	Smruti Ranjan Polai: Backend Development, DB Manager, Frontend Consolidation
